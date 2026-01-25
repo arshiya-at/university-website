@@ -1,11 +1,14 @@
-# Step 1: Use the official Nginx image
+# Use Nginx image
 FROM nginx:alpine
 
-# Step 2: Copy all website files to Nginx's default directory
-COPY . /usr/share/nginx/html
+# Remove default Nginx static files
+RUN rm -rf /usr/share/nginx/html/*
 
-# Step 3: Expose port 80 (HTTP)
+# Copy built website files from Parcel
+COPY dist/ /usr/share/nginx/html
+
+# Expose port 80
 EXPOSE 80
 
-# Step 4: Start Nginx in the foreground
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
