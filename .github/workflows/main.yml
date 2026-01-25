@@ -34,7 +34,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build Web with Parcel
-        run: npx parcel build "./src/index.html" --dist-dir "./dist" --public-url "./" --no-cache
+        run: npx parcel build "./pages/index.html" --dist-dir "./dist" --public-url "./" --no-cache
 
   image-build-job:
     needs: build-job
