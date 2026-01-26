@@ -137,3 +137,66 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+
+/* =========================
+   Students Page Styling
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+table thead tr {
+    background-color: #e6f0ff;
+}
+
+table th,
+table td {
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+table th {
+    color: #004080;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+    background-color: #eef5ff;
+}
+
+/* Student Status Colors */
+
+td:last-child {
+    font-weight: bold;
+}
+
+.status-active {
+    color: #008000;
+}
+
+.status-graduating {
+    color: #cc7a00;
+}
+
+/* Responsive Table */
+
+@media (width <= 768px) {
+    table {
+        font-size: 0.85em;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}

@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Students | Computer Science Department</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
+
+    <!-- Header (UNCHANGED) -->
+    <header>
+        <div class="container">
+            <h1>Computer Science Department</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./teachers.html">Teachers</a></li>
+                    <li><a href="./students.html" class="active">Student</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Students Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Our Students</h2>
+            <p>
+                Manage enrolled students, view academic details, and track progress
+                within the Computer Science Department.
+            </p>
+        </div>
+    </section>
+
+    <!-- Students Overview -->
+    <section class="mission">
+        <div class="container">
+            <h2>Student Management</h2>
+            <p>
+                This section provides an overview of students currently enrolled in
+                the department, including their registration numbers, programs,
+                and academic status.
+            </p>
+        </div>
+    </section>
+
+    <!-- Student List -->
+    <section class="courses">
+        <div class="container">
+            <h2>Enrolled Students</h2>
+
+            <div class="course-card">
+                <h3>Student Information Table</h3>
+                <p>Below is a sample list of students enrolled in the department.</p>
+
+                <table style="width:100%; margin-top:20px; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background-color:#e6f0ff;">
+                            <th style="padding:10px; border:1px solid #ccc;">Reg No</th>
+                            <th style="padding:10px; border:1px solid #ccc;">Name</th>
+                            <th style="padding:10px; border:1px solid #ccc;">Program</th>
+                            <th style="padding:10px; border:1px solid #ccc;">Semester</th>
+                            <th style="padding:10px; border:1px solid #ccc;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding:10px; border:1px solid #ccc;">CS-2023-001</td>
+                            <td style="padding:10px; border:1px solid #ccc;">Ali Ahmed</td>
+                            <td style="padding:10px; border:1px solid #ccc;">BS Computer Science</td>
+                            <td style="padding:10px; border:1px solid #ccc;">5th</td>
+                            <td style="padding:10px; border:1px solid #ccc;">Active</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:10px; border:1px solid #ccc;">CS-2023-014</td>
+                            <td style="padding:10px; border:1px solid #ccc;">Ayesha Khan</td>
+                            <td style="padding:10px; border:1px solid #ccc;">BS Software Engineering</td>
+                            <td style="padding:10px; border:1px solid #ccc;">3rd</td>
+                            <td style="padding:10px; border:1px solid #ccc;">Active</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:10px; border:1px solid #ccc;">CS-2022-021</td>
+                            <td style="padding:10px; border:1px solid #ccc;">Usman Raza</td>
+                            <td style="padding:10px; border:1px solid #ccc;">BS Computer Science</td>
+                            <td style="padding:10px; border:1px solid #ccc;">7th</td>
+                            <td style="padding:10px; border:1px solid #ccc;">Graduating</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (UNCHANGED) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Computer Science Department | University Name</p>
+            <p>Contact: csdept@university.edu | Phone: +92-300-1234567</p>
+        </div>
+    </footer>
+
 </body>
 </html>
