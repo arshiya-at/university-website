@@ -138,17 +138,15 @@ footer {
     margin-top: 40px;
 }
 
-
 /* =========================
    Students Page Styling
    ========================= */
 
-/* Student Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 25px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 table thead tr {
@@ -177,20 +175,22 @@ table tbody tr:hover {
 }
 
 /* Student Status Colors */
+
 td:last-child {
     font-weight: bold;
 }
 
-td:last-child:contains("Active") {
-    color: green;
+.status-active {
+    color: #008000;
 }
 
-td:last-child:contains("Graduating") {
+.status-graduating {
     color: #cc7a00;
 }
 
 /* Responsive Table */
-@media (max-width: 768px) {
+
+@media (width <= 768px) {
     table {
         font-size: 0.85em;
     }
