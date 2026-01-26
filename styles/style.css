@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .dashboard-hero {
-    background: linear-gradient(to right, #06c, );
+    background: linear-gradient(to right, #06c, #09f);
 }
 
 /* Buttons */
@@ -121,11 +121,18 @@ nav ul li a:hover {
     text-align: left;
 }
 
-.highlights ul li,
+/* Recent activity first */
 .recent-activity li {
     margin-bottom: 10px;
     font-size: 16px;
 }
+
+/* Then highlights */
+.highlights ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
 
 /* Courses Section */
 .courses {
@@ -145,7 +152,7 @@ nav ul li a:hover {
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 4px;
-    box-shadow: 0 2px 6px rgb(0, 0, 0, 5%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%); /* ✅ Correct */
 }
 
 .course-card h3 {
@@ -172,7 +179,7 @@ nav ul li a:hover {
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 3px 10px rgb(0, 0, 0, 10%);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 5%); /* ✅ Correct */
 }
 
 .card h3 {
