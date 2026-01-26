@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Student Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="./teachers.html">Teachers</a></li>
+                    <li><a href="./students.html">Students</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dashboard-hero">
+        <div class="container">
+            <h2>Welcome, Student 👋</h2>
+            <p>Here is an overview of your academic activities.</p>
+        </div>
+    </section>
+
+    <section class="dashboard-cards">
+        <div class="container cards">
+            <div class="card">
+                <h3>Enrolled Courses</h3>
+                <p>5 Active Courses</p>
+            </div>
+
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>2 Pending</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>92%</p>
+            </div>
+
+            <div class="card">
+                <h3>CGPA</h3>
+                <p>3.45</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-activity">
+        <div class="container">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>Submitted Web Engineering Assignment</li>
+                <li>Attended DevOps Lecture</li>
+                <li>New course added: Cloud Computing</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 University Dashboard</p>
+        </div>
+    </footer>
 </body>
+
 </html>

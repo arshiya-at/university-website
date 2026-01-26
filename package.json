@@ -2,7 +2,6 @@
   "name": "univerity-management-system",
   "version": "1.0.0",
   "description": "This project implements a complete DevOps workflow for a\r University Computer Science Department static website.",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
