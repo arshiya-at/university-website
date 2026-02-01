@@ -7,12 +7,14 @@ body {
     color: #333;
     background-color: #f8f9fa;
 }
+
 /* Container */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
+
 /* Header */
 header {
     background-color: #004080;
