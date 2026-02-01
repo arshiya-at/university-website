@@ -1,0 +1,16 @@
+name: cd-release
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  release-dep-job:
+    environment: "release"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment Job
+        run: echo "Deployed on Render"
+      - name: Message to Render
+        run: curl -X POST ${{ secrets.RENDER_CALLBACK_URL_RELEASE }}
